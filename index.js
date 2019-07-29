@@ -9,13 +9,13 @@ var bitcore = module.exports;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of dashcore-lib found. ' +
-      'Please make sure that you are not mixing instances of classes of the different versions of dashcore.';
+    var message = 'More than one instance of florijncoincore-lib found. ' +
+      'Please make sure that you are not mixing instances of classes of the different versions of florijncoincore.';
     console.warn(message);
   }
 };
-bitcore.versionGuard(global._dashcore);
-global._dashcore = bitcore.version;
+bitcore.versionGuard(global._florijncoincore);
+global._florijncoincore = bitcore.version;
 
 // crypto
 bitcore.crypto = {};

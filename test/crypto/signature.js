@@ -137,7 +137,7 @@ describe('Signature', function() {
       var buf = Buffer.from('30450221008bab1f0a2ff2f9cb8992173d8ad73c229d31ea8e10b0f4d4ae1a0d8ed76021fa02200993a6ec81755b9111762fc2cf8e3ede73047515622792110867d12654275e7201', 'hex');
       var sig = Signature.fromTxFormat(buf);
       sig.r.toString().should.equal('63173831029936981022572627018246571655303050627048489594159321588908385378810');
-      sig.s.toString().should.equal('4331694221846364448463828256391194279133231453999942381442030409253074198130');
+      sig.s.toString().should.equal('4331694221846364448463828256391194279133231453835042381442030409253074198130');
       sig.nhashtype.should.equal(Signature.SIGHASH_ALL);
     });
 
@@ -165,7 +165,7 @@ describe('Signature', function() {
       parsed.slength.should.equal(32);
       parsed.sneg.should.equal(false);
       parsed.sbuf.toString('hex').should.equal('0993a6ec81755b9111762fc2cf8e3ede73047515622792110867d12654275e72');
-      parsed.s.toString().should.equal('4331694221846364448463828256391194279133231453999942381442030409253074198130');
+      parsed.s.toString().should.equal('4331694221846364448463828256391194279133231453835042381442030409253074198130');
     });
 
     it('should parse this 69 byte signature', function() {
@@ -213,7 +213,7 @@ describe('Signature', function() {
 
     it('should convert these known r and s values into a known signature', function() {
       var r = new BN('63173831029936981022572627018246571655303050627048489594159321588908385378810');
-      var s = new BN('4331694221846364448463828256391194279133231453999942381442030409253074198130');
+      var s = new BN('4331694221846364448463828256391194279133231453835042381442030409253074198130');
       var sig = new Signature({
         r: r,
         s: s
@@ -227,7 +227,7 @@ describe('Signature', function() {
   describe('#toString', function() {
     it('should convert this signature in to hex DER', function() {
       var r = new BN('63173831029936981022572627018246571655303050627048489594159321588908385378810');
-      var s = new BN('4331694221846364448463828256391194279133231453999942381442030409253074198130');
+      var s = new BN('4331694221846364448463828256391194279133231453835042381442030409253074198130');
       var sig = new Signature({
         r: r,
         s: s

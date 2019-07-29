@@ -27,10 +27,10 @@ describe('Networks', function() {
 
     networks.disableRegtest();
     networks.testnet.networkMagic.should.deep.equal(Buffer.from('cee2caff', 'hex'));
-    networks.testnet.port.should.equal(19999);
+    networks.testnet.port.should.equal(18350);
     networks.testnet.dnsSeeds.should.deep.equal([
      'testnet-seed.darkcoin.io',
-     'testnet-seed.dashdot.io',
+     'testnet-seed.florijncoindot.io',
      'test.dnsseed.masternode.io'
     ]);
   });

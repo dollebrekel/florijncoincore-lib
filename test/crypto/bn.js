@@ -15,8 +15,8 @@ describe('BN', function() {
   });
 
   it('should parse this number', function() {
-    var bn = new BN(999970000);
-    bn.toString().should.equal('999970000');
+    var bn = new BN(835070000);
+    bn.toString().should.equal('835070000');
   });
 
   it('should parse numbers below and at bn.js internal word size', function() {

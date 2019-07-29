@@ -144,7 +144,7 @@ describe('Transaction', function() {
       ],
       outputs: [
         {
-          satoshis: 3999999040,
+          satoshis: 3835099040,
           script: '76a914fa1e0abfb8d26e494375f47e04b4883c44dd44d988ac'
         },
         {
@@ -506,7 +506,7 @@ describe('Transaction', function() {
     it('if satoshis are invalid', function() {
       var transaction = new Transaction()
         .from(simpleUtxoWith100000Satoshis)
-        .to(toAddress, 99999)
+        .to(toAddress, 83509)
         .change(changeAddress)
         .sign(privateKey);
       transaction.outputs[0]._satoshis = 100;
@@ -518,7 +518,7 @@ describe('Transaction', function() {
     it('if fee is too small, fail serialization', function() {
       var transaction = new Transaction()
         .from(simpleUtxoWith100000Satoshis)
-        .to(toAddress, 99999)
+        .to(toAddress, 83509)
         .change(changeAddress)
         .sign(privateKey);
       expect(function() {
@@ -625,7 +625,7 @@ describe('Transaction', function() {
       var transaction = new Transaction()
         .from(simpleUtxoWith1BTC)
         .to(toAddress, 99900000)
-        .fee(99999)
+        .fee(83509)
         .sign(privateKey);
       expect(function() {
         return transaction.serialize();
@@ -972,7 +972,7 @@ describe('Transaction', function() {
         return new Transaction().lockUntilDate(1);
       }).to.throw(errors.Transaction.LockTimeTooEarly);
       expect(function() {
-        return new Transaction().lockUntilDate(499999999);
+        return new Transaction().lockUntilDate(483508350);
       }).to.throw(errors.Transaction.LockTimeTooEarly);
     });
     it('fails if the block height is negative', function() {
@@ -1052,7 +1052,7 @@ describe('Transaction', function() {
         .change(changeAddress)
         .to(toAddress, 10000);
       transaction.inputAmount.should.equal(100000000);
-      transaction.outputAmount.should.equal(99999000);
+      transaction.outputAmount.should.equal(83509000);
     });
     it('returns correct values for coinjoin transaction', function() {
       // see livenet tx c16467eea05f1f30d50ed6dbc06a38539d9bb15110e4b7dc6653046a3678a718
@@ -1144,7 +1144,7 @@ describe('Transaction', function() {
       tx.outputs.length.should.equal(2);
       tx.outputs[0].satoshis.should.equal(10000000);
       tx.outputs[0].script.toAddress().toString().should.equal(toAddress);
-      tx.outputs[1].satoshis.should.equal(89999000);
+      tx.outputs[1].satoshis.should.equal(88350000);
       tx.outputs[1].script.toAddress().toString().should.equal(changeAddress);
     });
 
@@ -1373,7 +1373,7 @@ describe('Transaction', function() {
         ],
         outputs: [
           {
-            satoshis: 3999999040,
+            satoshis: 3835099040,
             script: '76a914fa1e0abfb8d26e494375f47e04b4883c44dd44d988ac'
           },
           {
@@ -1703,7 +1703,7 @@ describe('Transaction', function() {
       var regTxId = 'd0df4810f9899a71968b5e4147b52cab86ad9342a9806a514227514d8a160a3c';
       var hashPrevSubTx = 'd0df4810f9899a71968b5e4147b52cab86ad9342a9806a514227514d8a160a3c';
       var hashSTPacket = 'a0df4810f9899a71968b5e4147b52cab86ad9342a9806a514227514d8a160a3a';
-      var creditFee = 1000; // 0.00001 dash
+      var creditFee = 1000; // 0.00001 florijncoin
 
       it('Should parse and verify hex', function () {
         var subTxTransitionTxHex = '03000c00000000000000ac01003c0a168a4d512742516a80a94293ad86ab2cb547415e8b96719a89f91048dfd03c0a168a4d512742516a80a94293ad86ab2cb547415e8b96719a89f91048dfd0e8030000000000003a0a168a4d512742516a80a94293ad86ab2cb547415e8b96719a89f91048dfa0411f3ae683b0a3ac3c3342ab30e646df344e8c3648902b48c5cb5f29c17f15a43ad93943b49c1f83a06321c6c434ae1c73d22ae83da3d39b9c5ce98a7947f5deab90';
