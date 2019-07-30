@@ -1,5 +1,5 @@
 {
-  "name": "@Ecrypty/florijncoincore-lib",
+  "name": "@DolleDev/florijncoincore-lib",
   "version": "0.17.8",
   "description": "A pure and powerful JavaScript Florijncoin library.",
   "author": "Florijncoin Core Group, Inc. <info@florijncoin.org>",
@@ -40,17 +40,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ecrypty/florijncoincore-lib.git"
+    "url": "https://github.com/DolleDev/florijncoincore-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/Ecrypty/florijncoincore-lib/issues"
+    "url": "https://github.com/DolleDev/florijncoincore-lib/issues"
   },
-  "homepage": "https://github.com/Ecrypty/florijncoincore-lib",
+  "homepage": "https://github.com/DolleDev/florijncoincore-lib",
   "browser": {
     "request": "browser-request"
   },
   "dependencies": {
-    "@Ecrypty/x11-hash-js": "^1.0.2",
+    "@DolleDev/x11-hash-js": "^1.0.2",
     "bloom-filter": "^0.2.0",
     "bn.js": "=4.11.8",
     "bs58": "=4.0.1",
