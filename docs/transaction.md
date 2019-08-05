@@ -182,4 +182,4 @@ Since v0.13, simple transactions (having no more than 4 inputs), are entitled to
 A method `isSimpleTransaction()` will simplify that verification for you.  
 
 ## Upcoming changes
-We're debating an API for Merge Avoidance, CoinJoin, Smart contracts, CoinSwap, and Stealth Addresses. We're expecting to have all of them by some time in 2015. Payment channel creation is available in the [florijncoincore-channel](https://github.com/DolleDev/florijncoincore-channel) module.
+We're debating an API for Merge Avoidance, CoinJoin, Smart contracts, CoinSwap, and Stealth Addresses. We're expecting to have all of them by some time in 2015. Payment channel creation is available in the [florijncoincore-channel](https://github.com/dolledev/florijncoincore-channel) module.

@@ -1,6 +1,6 @@
 {
-  "name": "@DolleDev/florijncoincore-lib",
-  "version": "https://github.com/DolleDev/florijncoincore-lib/archive/2fb0a82f9f2a0475c58ec0bfcbf662f0e6347d25",
+  "name": "@dolledev/florijncoincore-lib",
+  "version": "https://github.com/dolledev/florijncoincore-lib/tarball/2fb0a82f9f2a0475c58ec0bfcbf662f0e6347d25",
   "description": "A pure and powerful JavaScript Florijncoin library.",
   "author": "Florijncoin Core Group, Inc. <info@florijncoin.org>",
   "main": "index.js",
@@ -40,17 +40,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DolleDev/florijncoincore-lib.git"
+    "url": "https://github.com/dolledev/florijncoincore-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/DolleDev/florijncoincore-lib/issues"
+    "url": "https://github.com/dolledev/florijncoincore-lib/issues"
   },
-  "homepage": "https://github.com/DolleDev/florijncoincore-lib",
+  "homepage": "https://github.com/dolledev/florijncoincore-lib",
   "browser": {
     "request": "browser-request"
   },
   "dependencies": {
-    "@DolleDev/x11-hash-js": "^1.0.2",
+    "@dolledev/x11-hash-js": "^1.0.2",
     "bloom-filter": "^0.2.0",
     "bn.js": "=4.11.8",
     "bs58": "=4.0.1",

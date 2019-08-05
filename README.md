@@ -1,7 +1,7 @@
 # Florijncoincore Library
 
-[![Build Status](https://img.shields.io/travis/DolleDev/florijncoincore-lib.svg?branch=master)](https://travis-ci.org/DolleDev/florijncoincore-lib)
-[![NPM Package](https://img.shields.io/npm/v/@DolleDev/florijncoincore-lib.svg)](https://www.npmjs.org/package/@DolleDev/florijncoincore-lib)
+[![Build Status](https://img.shields.io/travis/dolledev/florijncoincore-lib.svg?branch=master)](https://travis-ci.org/dolledev/florijncoincore-lib)
+[![NPM Package](https://img.shields.io/npm/v/@dolledev/florijncoincore-lib.svg)](https://www.npmjs.org/package/@dolledev/florijncoincore-lib)
 
 > A pure and powerful JavaScript Florijncoin library.
 
@@ -19,7 +19,7 @@ Florijncoin is a powerful new peer-to-peer platform for the next generation of f
 ### NodeJS
 
 ```
-npm install @DolleDev/florijncoincore-lib
+npm install @dolledev/florijncoincore-lib
 ```
 
 ### Browser
@@ -53,18 +53,18 @@ This will generate files named `florijncoincore-lib.js` and `florijncoincore-lib
 
 Some functionality is implemented as a module that can be installed separately:
 
-* [Payment Protocol Support](https://github.com/DolleDev/florijncoincore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/DolleDev/florijncoincore-p2p)
-* [Florijncoin Core JSON-RPC](https://github.com/DolleDev/florijncoind-rpc)
-* [Payment Channels](https://github.com/DolleDev/florijncoincore-channel)
-* [Mnemonics](https://github.com/DolleDev/florijncoincore-mnemonic)
-* [Elliptical Curve Integrated Encryption Scheme](https://github.com/DolleDev/bitcore-ecies-florijncoin)
-* [Signed Messages](https://github.com/DolleDev/bitcore-message-florijncoin)
+* [Payment Protocol Support](https://github.com/dolledev/florijncoincore-payment-protocol)
+* [Peer to Peer Networking](https://github.com/dolledev/florijncoincore-p2p)
+* [Florijncoin Core JSON-RPC](https://github.com/dolledev/florijncoind-rpc)
+* [Payment Channels](https://github.com/dolledev/florijncoincore-channel)
+* [Mnemonics](https://github.com/dolledev/florijncoincore-mnemonic)
+* [Elliptical Curve Integrated Encryption Scheme](https://github.com/dolledev/bitcore-ecies-florijncoin)
+* [Signed Messages](https://github.com/dolledev/bitcore-message-florijncoin)
 
 ### Development & Tests
 
 ```sh
-git clone https://github.com/DolleDev/florijncoincore-lib
+git clone https://github.com/dolledev/florijncoincore-lib
 cd florijncoincore-lib
 npm install
 ```
@@ -111,7 +111,7 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/DolleDev/florijncoincore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/dolledev/florijncoincore-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
