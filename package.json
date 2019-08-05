@@ -1,6 +1,6 @@
 {
   "name": "@dolledev/florijncoincore-lib",
-  "version": "https://github.com/dolledev/florijncoincore-lib/tarball/2fb0a82f9f2a0475c58ec0bfcbf662f0e6347d25",
+  "version": "0.17.8",
   "description": "A pure and powerful JavaScript Florijncoin library.",
   "author": "Florijncoin Core Group, Inc. <info@florijncoin.org>",
   "main": "index.js",
