@@ -1,6 +1,6 @@
 {
   "name": "@DolleDev/florijncoincore-lib",
-  "version": "0.17.8",
+  "version": "https://github.com/DolleDev/florijncoincore-lib/archive/2fb0a82f9f2a0475c58ec0bfcbf662f0e6347d25",
   "description": "A pure and powerful JavaScript Florijncoin library.",
   "author": "Florijncoin Core Group, Inc. <info@florijncoin.org>",
   "main": "index.js",
